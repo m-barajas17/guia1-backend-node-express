@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 // Ruta de saludo en formato JSON
 app.get("/saludo", (req, res) => {
-  res.json({ mensaje: "Bienvenido al backend con Node.js y Express" });
+  res.json({ mensaje: "Hola, este backend fue construido por Miguel Barajas" });
 });
 
 // Ruta que devuelve una lista fija de productos
