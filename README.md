@@ -13,3 +13,10 @@ node src/app.js
 
 ## Autor
 Miguel Barajas
+
+## Endpoints disponibles
+
+| Método | Ruta      | Descripción                          |
+|--------|-----------|---------------------------------------|
+| GET    | /         | Mensaje de bienvenida del servidor    |
+| GET    | /saludo   | Devuelve un saludo en formato JSON    |
