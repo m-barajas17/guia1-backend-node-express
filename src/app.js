@@ -2,14 +2,17 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+// Ruta principal de bienvenida
 app.get("/", (req, res) => {
   res.send("Servidor backend funcionando correctamente");
 });
 
+// Ruta de saludo en formato JSON
 app.get("/saludo", (req, res) => {
   res.json({ mensaje: "Bienvenido al backend con Node.js y Express" });
 });
 
+// Ruta que devuelve una lista fija de productos
 app.get("/productos", (req, res) => {
   const productos = [
     { id: 1, nombre: "Teclado mecánico", precio: 150000 },
@@ -18,6 +21,7 @@ app.get("/productos", (req, res) => {
   ];
   res.json(productos);
 });
+
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
